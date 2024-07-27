@@ -22,6 +22,9 @@
 .primary-color{
     color: #e76f51;
 }
+.dark-1{
+    color: #e0e0e0;
+}
 .primary-btn{
     border: none;
     outline: none;
@@ -30,6 +33,10 @@
     padding: 10px 20px;
     font-weight: 500;
     border-radius: 5px;
+}
+.link-style{
+    text-decoration: none;
+    color: white;
 }
 
 /* navbar styles start here */
@@ -58,6 +65,35 @@ header{
 .nav-icon{
     display: none;
 }
+/* hero image section styles start here */
+.hero-section{
+    padding: 20px 80px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-content .title{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.hero-content .description{
+    margin-bottom: 20px;
+}
+.hero-btn{
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+.hero-image{
+    max-width: 550px;
+}
+.hero-image img{
+    width: 100%;
+}
 
 /* responsive design for mobile device */
 @media screen and (max-width:576px) {
@@ -75,6 +111,29 @@ header{
 .nav-icon i{
     font-size: 32px;
     color: white;
-}    
+}
+/* hero image section styles start here */
+.hero-section{
+    padding: 20px;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+} 
+
+
+}
+
+/* responsive design for mobile device */
+@media screen and (min-width:577px) and (max-width:992px) {
+
+/* navbar styles start here */
+.navbar{
+    padding: 50px;
+}
+/* hero image section styles start here */
+.hero-section{
+    padding: 40px;
+    grid-template-columns: repeat(1,1fr);
+}
 
 }
