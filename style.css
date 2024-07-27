@@ -25,6 +25,9 @@
 .dark-1{
     color: #e0e0e0;
 }
+.dark-2{
+    color: #6c6c6c;
+}
 .primary-btn{
     border: none;
     outline: none;
@@ -133,6 +136,48 @@ header{
     width: 100%;
     height: 100%;
 }
+/* latest-item section styles start here */
+.latest-item-section{
+    margin: 70px 80px;
+}
+.latest-item-title{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.latest-item-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.latest-item-card{
+   max-width: 350px;
+   box-shadow: 2px 4px 20px rgb(214, 212, 212);
+   padding: 10px 15px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   gap: 10px;
+}
+.latest-card-image{
+    max-width: 330px;
+}
+.latest-card-image img{
+    width: 100%;
+}
+.latest-card-btn{
+   max-width: 160px;
+   font-weight: 700; 
+}
+.card-btn-2, .card-btn-3{
+    background-color: white;
+    border: 1px solid var(--color-primary);
+}
+.card-btn-2 a, .card-btn-3 a{
+    color: var(--color-primary);
+}
 
 /* responsive design for mobile device */
 @media screen and (max-width:576px) {
@@ -171,7 +216,16 @@ header{
     margin: 0px auto;
     max-width: 320px;
 }
-
+/* latest-item section styles start here */
+.latest-item-section{
+    margin: 30px 20px;
+}
+.latest-item-cards{
+    grid-template-columns: repeat(1,1fr);
+}
+.latest-item-card{
+    margin: 0px auto;
+}
 
 }
 
@@ -190,6 +244,10 @@ header{
 /* feature section styles start here */
 .feature-section{
     margin: 30px 50px;
+}
+/* latest-item section styles start here */
+.latest-item-section{
+    margin: 50px;
 } 
 
 }
