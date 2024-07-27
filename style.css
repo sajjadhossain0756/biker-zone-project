@@ -223,6 +223,50 @@ header{
 .review-image img{
     width: 100%;
 }
+/* faq section styles start here */
+.faq-section{
+    margin: 40px 80px;
+}
+.faq-title{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.faq-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.faq-image{
+    max-width: 430px;
+}
+.faq-image img{
+    width: 100%;
+}
+.faq-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.faq-card{
+    position: relative;
+    box-shadow: 2px 4px 20px rgb(214, 212, 212);
+    padding: 20px;
+    border-radius: 10px;
+}
+.faq-card i{
+    position: absolute;
+    font-size: 32px;
+    right: 10px;
+    top: 20px;
+}
+.faq-card-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
 
 /* responsive design for mobile device */
 @media screen and (max-width:576px) {
@@ -284,6 +328,14 @@ header{
 .review-card{
     margin: 0 auto;
 }
+/* faq section styles start here */
+.faq-section{
+    margin: 40px 20px;
+}
+.faq-container{
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+}
 
 }
 
@@ -330,6 +382,14 @@ header{
 }
 .review-image{
     width: 350px;
+}
+/* faq section styles start here */
+.faq-section{
+    margin: 40px 50px;
+}
+.faq-container{
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
 }
 
 }
