@@ -3,4 +3,78 @@
 
 .poppins-font {
     font-family: "Poppins", sans-serif;
-  }
+}
+
+/* variable declaration */
+:root{
+    --color-primary: #e76f51;
+}
+
+/* universal styles start here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.d-flex{
+    display: flex;
+}
+.primary-color{
+    color: #e76f51;
+}
+.primary-btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+/* navbar styles start here */
+header{
+    background-color: #264653;
+}
+.navbar{
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 80px;
+}
+.nav-brand{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+.navbar-nav{
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+.nav-icon{
+    display: none;
+}
+
+/* responsive design for mobile device */
+@media screen and (max-width:576px) {
+
+/* navbar styles start here */
+.navbar{
+   padding: 20px;
+}
+.navbar-nav{
+    display: none;
+}
+.nav-icon{
+    display: block;
+}
+.nav-icon i{
+    font-size: 32px;
+    color: white;
+}    
+
+}
